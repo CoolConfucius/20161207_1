@@ -8,17 +8,16 @@
   <script>
   var app = angular.module('app', []);
   app.controller('divController', ['$scope', function($scope){
-    $scope.myName = 'your name'; // your name!
+    $scope.myName = 'your name'; // your name
     $scope.myFavoriteLanguage = 'JavaScript';
     $scope.myFavoriteJSLibrary = 'Angular';
   }]);
   </script>
 </head>
 <body>
+    <h1>test</h1>
     <div ng-controller = "divController" id = "divController">
-      <p>{{myName}}</p>
-      <p>{{myFavoriteLanguage}}</p>
-      <p>{{myFavoriteJSLibrary}}</p>
+      <p>Hello my name is {{myName}}, my favorite Language is {{myFavoriteLanguage}}, because the {{myFavoriteJSLibrary}} library is awesome</p>
     </div>
 </body>
 </html>
